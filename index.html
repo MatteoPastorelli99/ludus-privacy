@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ludus · Privacy</title>
+<style>
+  :root {
+    --bg: #faf7f0; --fg: #24201a; --muted: #6b6255; --line: #e4dccb;
+    --accent: #8e1f2f; --gold: #b8860b; --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16130f; --fg: #ece6da; --muted: #a59c8c; --line: #2f2a22;
+            --accent: #f0bc42; --gold: #f0bc42; --card: #1e1a15; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 40px max(16px, env(safe-area-inset-right, 0px)) 64px max(16px, env(safe-area-inset-left, 0px));
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 28px; }
+  .marchio { font: 900 34px/1 Georgia, "Times New Roman", serif; letter-spacing: .04em; margin: 0; }
+  .marchio span { color: var(--gold); }
+  .sotto { color: var(--muted); margin: 8px 0 0; }
+  nav { display: flex; gap: 12px; margin-top: 14px; font-size: 14px; }
+  a { color: var(--accent); }
+  h2 { font-size: 20px; margin: 36px 0 8px; text-wrap: balance; }
+  h3 { font-size: 16px; margin: 22px 0 4px; }
+  .riassunto {
+    background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--gold);
+    border-radius: 10px; padding: 14px 18px; margin: 0 0 8px;
+  }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .data { color: var(--muted); font-size: 14px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="marchio">Lu<span>dus</span></p>
+    <p class="sotto">Informativa sulla privacy · Privacy policy</p>
+    <nav><a href="#it">Italiano</a><a href="#en">English</a></nav>
+  </header>
+
+  <section id="it" lang="it">
+    <p class="data">Ultimo aggiornamento: 21 ottobre 2026</p>
+    <p class="riassunto"><strong>In breve:</strong> Ludus funziona completamente offline. Non raccoglie, non invia e non condivide nessun dato personale. Tutto quello che scrivi resta sul tuo telefono.</p>
+
+    <h2>Quali dati raccoglie l'app</h2>
+    <p>Nessuno. Ludus non ha il permesso di accedere a internet, non richiede un account e non contiene pubblicità, strumenti di analisi o di tracciamento. Lo sviluppatore non riceve nessuna informazione su di te o su come usi l'app.</p>
+
+    <h2>Dati salvati sul tuo dispositivo</h2>
+    <p>Per funzionare l'app salva nella propria memoria privata, sul tuo dispositivo, i dati che inserisci tu: schede, allenamenti, serie e carichi, attività, peso, misure del corpo, foto dei check e i dati del profilo (per esempio sesso e altezza, usati per stimare la massa grassa). Questi dati non lasciano mai il dispositivo, salvo quando decidi tu di esportarli o condividerli (vedi sotto). Disinstallando l'app vengono cancellati.</p>
+
+    <h3>Foto</h3>
+    <p>Le foto dei check le scegli tu con il selettore di foto del sistema: l'app non ha accesso alla tua galleria. Le foto scelte vengono copiate nella memoria privata dell'app. Il riconoscimento della posizione del corpo, usato per allineare le foto tra un check e l'altro, avviene interamente sul dispositivo (Google ML Kit su Android, Apple Vision su iPhone), senza inviare le immagini a nessuno.</p>
+
+    <h3>Importazione di schede da PDF</h3>
+    <p>Quando importi una scheda da un PDF, la lettura del testo avviene sul dispositivo. Il file non viene inviato a nessun servizio.</p>
+
+    <h2>Backup e condivisione</h2>
+    <ul>
+      <li><strong>Backup:</strong> l'app crea un file di backup solo quando lo chiedi tu, oppure, su Android, in automatico una volta a settimana se attivi questa opzione, nella cartella che scegli tu. Dove finisce il file lo decidi tu: se scegli una cartella sincronizzata con un servizio cloud, per quel file vale l'informativa di quel servizio.</li>
+      <li><strong>Backup di sistema:</strong> il backup automatico di Android su Google Drive è disattivato per Ludus, quindi i dati dell'app non vengono copiati nel cloud senza che tu lo sappia.</li>
+      <li><strong>Condivisione:</strong> schede e PDF dei progressi vengono condivisi solo quando tocchi "Condividi", attraverso il menu di condivisione del sistema e con l'app che scegli tu.</li>
+    </ul>
+
+    <h2>Permessi usati</h2>
+    <ul>
+      <li><strong>Notifiche:</strong> per i promemoria di allenamento e per l'avviso di fine recupero. Puoi disattivarle dalle Impostazioni dell'app o del telefono.</li>
+      <li><strong>Avvio del telefono:</strong> per ripianificare i promemoria dopo un riavvio.</li>
+      <li><strong>Vibrazione:</strong> per l'avviso di fine recupero.</li>
+      <li><strong>Lavoro in background</strong> (wake lock, servizio in primo piano, stato della rete): li aggiungono le librerie di sistema Android usate per eseguire attività in background. L'app non usa la rete e non può inviare dati.</li>
+    </ul>
+
+    <h2>Minori</h2>
+    <p>Ludus non raccoglie dati da nessun utente, minori compresi.</p>
+
+    <h2>Modifiche a questa informativa</h2>
+    <p>Eventuali modifiche saranno pubblicate su questa pagina con la data di aggiornamento.</p>
+
+    <h2>Contatti</h2>
+    <p>Per domande su questa informativa: <a href="mailto:matteo.pastorelli99@gmail.com">matteo.pastorelli99@gmail.com</a></p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <p class="data">Last updated: October 21, 2026</p>
+    <p class="riassunto"><strong>In short:</strong> Ludus works completely offline. It does not collect, send or share any personal data. Everything you enter stays on your phone.</p>
+
+    <h2>Data collected</h2>
+    <p>None. Ludus has no internet permission, requires no account and contains no ads, analytics or tracking tools. The developer receives no information about you or about how you use the app.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>The app stores the data you enter in its private storage on your device: workout plans, workouts, sets and weights, activities, body weight, body measurements, progress photos and profile data (such as sex and height, used to estimate body fat). This data never leaves your device unless you choose to export or share it (see below). It is deleted when you uninstall the app.</p>
+
+    <h3>Photos</h3>
+    <p>You pick progress photos with the system photo picker: the app has no access to your gallery. Selected photos are copied into the app's private storage. Body pose detection, used to align photos between check-ins, runs entirely on the device (Google ML Kit on Android, Apple Vision on iPhone) and never sends images anywhere.</p>
+
+    <h3>Importing plans from PDF</h3>
+    <p>When you import a plan from a PDF, text recognition runs on the device. The file is not sent to any service.</p>
+
+    <h2>Backup and sharing</h2>
+    <ul>
+      <li><strong>Backup:</strong> the app creates a backup file only when you ask for it or, on Android, automatically once a week if you turn this option on, in a folder you choose. If you choose a folder synced with a cloud service, that service's privacy policy applies to the file.</li>
+      <li><strong>System backup:</strong> Android's automatic Google Drive backup is turned off for Ludus.</li>
+      <li><strong>Sharing:</strong> plans and progress PDFs are shared only when you tap "Share", through the system share sheet, with the app you choose.</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Notifications:</strong> workout reminders and the end-of-rest alert.</li>
+      <li><strong>Run at startup:</strong> to reschedule reminders after a reboot.</li>
+      <li><strong>Vibration:</strong> for the end-of-rest alert.</li>
+      <li><strong>Background work</strong> (wake lock, foreground service, network state): added by the Android system libraries used for background tasks. The app does not use the network and cannot send data.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>Ludus does not collect data from any user, including children.</p>
+
+    <h2>Changes</h2>
+    <p>Any changes will be published on this page with the date of the update.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:matteo.pastorelli99@gmail.com">matteo.pastorelli99@gmail.com</a></p>
+  </section>
+</main>
+</body>
+</html>
